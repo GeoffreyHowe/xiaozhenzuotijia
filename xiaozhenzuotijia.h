@@ -17,5 +17,10 @@ public:
 
 private:
     Ui::XiaoZhenZuotijia *ui;
+    //    初始化字体
+    void iniFont();
+
+//    初始化关联信号与槽
+    void iniconnect();
 };
 #endif // XIAOZHENZUOTIJIA_H
