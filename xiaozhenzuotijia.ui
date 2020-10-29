@@ -24,7 +24,7 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>40</y>
+      <y>20</y>
       <width>971</width>
       <height>441</height>
      </rect>
@@ -228,6 +228,136 @@
      </item>
     </layout>
    </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>480</y>
+      <width>261</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,0,1">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>身心健康 ：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="labHealth">
+         <property name="styleSheet">
+          <string notr="true">background:rgb(127, 127, 127);
+
+color:rgb(0, 255, 29);
+</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0,1">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>今天时间 ：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="labTime">
+         <property name="styleSheet">
+          <string notr="true">background:rgb(127, 127, 127);
+
+color:rgb(0, 255, 29);</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,0,1">
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>纸面成绩 ：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="labScore">
+         <property name="styleSheet">
+          <string notr="true">background:rgb(127, 127, 127);
+
+color:rgb(0, 255, 29);</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -235,7 +365,7 @@
      <x>0</x>
      <y>0</y>
      <width>1044</width>
-     <height>33</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">

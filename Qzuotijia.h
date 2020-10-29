@@ -20,6 +20,12 @@ public:
     void changeScore(int);
     void changeTime(int);
 
+    QString getScore();
+    QString getTime();
+    QString getHealth();
+    int getDay();
+
+
 private slots:
 
 
