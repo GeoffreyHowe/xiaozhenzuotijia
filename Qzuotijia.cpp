@@ -61,7 +61,7 @@ Qzuotijia::~Qzuotijia()
 {
 
 }
-
+//改变日期的函数，顺便发射日期改变的信号，通知相应组件刷新
 void Qzuotijia::changeDay(int d)
 {
     if(d!=0)
@@ -70,7 +70,7 @@ void Qzuotijia::changeDay(int d)
         emit onDaychanged();
     }
 }
-
+//改变健康值的函数，顺便发射信号，通知相应组件刷新
 void Qzuotijia::changeHealth(int h)
 {
     if(h!=0)
@@ -79,7 +79,7 @@ void Qzuotijia::changeHealth(int h)
         emit onHealthchanged();
     }
 }
-
+//改变成绩，发射信号
 void Qzuotijia::changeScore(int s)
 {
     if(s!=0)
@@ -88,7 +88,7 @@ void Qzuotijia::changeScore(int s)
         emit onScorechanged();
     }
 }
-
+//改变今天时间，发射信号
 void Qzuotijia::changeTime(int t)
 {
     if(t!=0)
@@ -127,7 +127,7 @@ int Qzuotijia:: getDay()
 {
     return Day;
 }
-
+//下一天事件，当下一天按钮点下，触发该事件
 void Qzuotijia::nextDay()
 {
     Qincident Doing;
@@ -148,7 +148,7 @@ void Qzuotijia::settmpItemr(QListWidgetItem *tmpr)
     this->tmpr = tmpr;
     qDebug()<<this->tmpr->text()<<endl;
 }
-
+//给做题家的清单里面添加事件
 void Qzuotijia::add()
 {
     if(tmpa!=NULL)
@@ -172,7 +172,7 @@ void Qzuotijia::add()
 //        }
     }
 }
-
+//给做题家的清单里面移除事件
 void Qzuotijia::remove()
 {
     if(tmpr!=NULL)

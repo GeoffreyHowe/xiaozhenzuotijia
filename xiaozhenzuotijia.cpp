@@ -1,7 +1,7 @@
 #include "xiaozhenzuotijia.h"
 #include "ui_xiaozhenzuotijia.h"
 #include <QFontDatabase>
-
+#include <QDebug>
 XiaoZhenZuotijia::XiaoZhenZuotijia(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::XiaoZhenZuotijia)
@@ -24,7 +24,7 @@ XiaoZhenZuotijia::~XiaoZhenZuotijia()
     delete prbDay;
     delete labDay;
 }
-
+//下一天按钮点击事件
 void XiaoZhenZuotijia::onbtnNextDay_clicked()
 {
     zuotijia->changeDay(1);
@@ -33,46 +33,54 @@ void XiaoZhenZuotijia::onbtnNextDay_clicked()
 
     zuotijia->nextDay();
 }
-
+//右箭头按钮点击事件
 void XiaoZhenZuotijia::onbtnBegin_clicked()
 {
     if(zuotijia->tmpa!=NULL)
     {
-        ui->CandoList->clear();
-        ui->CandoList->addItems(zuotijia->getCandoItems());
-        ui->DoingList->clear();
-        ui->DoingList->addItems(zuotijia->getDoingItems());
+        for(int i=0;i<ui->CandoList->count();i++)
+        {
+            if(ui->CandoList->item(i)->text()==zuotijia->tmpa->text())
+            {
+                ui->CandoList->takeItem(i);
+                ui->DoingList->addItem(zuotijia->tmpa->text());
+            }
+        }
     }
     zuotijia->tmpa=NULL;
 }
-
+//左箭头按钮点击事件
 void XiaoZhenZuotijia::onbtnStop_clicked()
 {
     if(zuotijia->tmpr!=NULL)
     {
-        ui->CandoList->clear();
-        ui->CandoList->addItems(zuotijia->getCandoItems());
-        ui->DoingList->clear();
-        ui->DoingList->addItems(zuotijia->getDoingItems());
+        for(int i=0;i<ui->DoingList->count();i++)
+        {
+            if(ui->DoingList->item(i)->text()==zuotijia->tmpr->text())
+            {
+                ui->DoingList->takeItem(i);
+                ui->CandoList->addItem(zuotijia->tmpr->text());
+            }
+        }
     }
     zuotijia->tmpr=NULL;
 }
-
+//刷新今天时间Label
 void XiaoZhenZuotijia::refreshTime()
 {
     ui->labTime->setText(zuotijia->getTime());
 }
-
+//刷新纸面成绩Label
 void XiaoZhenZuotijia::refreshScore()
 {
     ui->labScore->setText(zuotijia->getScore());
 }
-
+//刷新身心健康Label
 void XiaoZhenZuotijia::refreshHealth()
 {
     ui->labHealth->setText(zuotijia->getHealth());
 }
-
+//初始化Label的字体
 void XiaoZhenZuotijia::iniFont()
 {
     // 添加字体文件
@@ -88,7 +96,7 @@ void XiaoZhenZuotijia::iniFont()
     ui->labHealth->setFont(LED);
     ui->labTime->setFont(LED);
 }
-
+//初始化信号与槽
 void XiaoZhenZuotijia::iniconnect()
 {
     connect(ui->btnNextDay,SIGNAL(clicked()),this,SLOT(onbtnNextDay_clicked()));//点击下一天时间+1
