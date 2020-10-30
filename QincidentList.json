@@ -4,23 +4,20 @@
         "cScore":0,
         "cHealth":0,
         "cTime":2,
-        "cDay":0,
         "discription":""
     },
     {
-        "name":"",
-        "cScore":0,
+        "name":"上课（4h）",
+        "cScore":1,
         "cHealth":0,
-        "cTime":0,
-        "cDay":0,
+        "cTime":4,
         "discription":""
     },
     {
-        "name":"",
-        "cScore":0,
+        "name":"上课（8h）",
+        "cScore":2,
         "cHealth":0,
-        "cTime":0,
-        "cDay":0,
+        "cTime":8,
         "discription":""
     }
 ]

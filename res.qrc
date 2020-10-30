@@ -2,4 +2,7 @@
     <qresource prefix="/fonts">
         <file>LCD2N___.TTF</file>
     </qresource>
+    <qresource prefix="/incidenList">
+        <file>QincidentList.json</file>
+    </qresource>
 </RCC>
