@@ -34,7 +34,7 @@ void XiaoZhenZuotijia::iniFont()
     //创建字体
     QFont LED;
     LED.setFamily(fontFamilies.at(0));
-    LED.setPointSize(12);
+    LED.setPointSize(18);
 
     ui->labScore->setFont(LED);
     ui->labHealth->setFont(LED);
