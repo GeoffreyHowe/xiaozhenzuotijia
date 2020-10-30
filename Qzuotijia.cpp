@@ -47,7 +47,7 @@ Qzuotijia::Qzuotijia()
                                         ob.value("discription").toString()
                                         );
                             Cando = new QListWidgetItem(ob.value("name").toString());
-                            addCando(*a1);
+                            CandoList.append(*a1);
                             CandoItems.append(ob.value("name").toString());
                             delete a1;
                             delete Cando;
@@ -193,10 +193,6 @@ void Qzuotijia::remove()
     }
 }
 
-void Qzuotijia::addCando(Qincident a)
-{
-    CandoList.append(a);
-}
 
 void Qzuotijia::Do(Qincident Doing)
 {

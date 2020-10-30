@@ -134,8 +134,7 @@ void XiaoZhenZuotijia::iniData()
     prbDay -> setValue(zuotijia->getDay());
     ui->statusbar->addWidget(prbDay);
 
-    ui->CandoList->addItems(zuotijia->getCandoItems());
-
+    ui->CandoList->addItems(zuotijia->getCandoItems());//初始化CandoList
 
 }
 
