@@ -11,13 +11,13 @@
         "cScore":1,
         "cHealth":0,
         "cTime":4,
-        "discription":""
+        "discription":"上课4小时，成绩缓慢增加"
     },
     {
         "name":"上课（8h）",
         "cScore":2,
         "cHealth":0,
         "cTime":8,
-        "discription":""
+        "discription":"上课8小时"
     }
 ]

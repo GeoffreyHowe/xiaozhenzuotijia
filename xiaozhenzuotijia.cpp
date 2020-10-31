@@ -43,7 +43,7 @@ void XiaoZhenZuotijia::onbtnBegin_clicked()
             if(ui->CandoList->item(i)->text()==zuotijia->tmpa->text())
             {
                 ui->CandoList->takeItem(i);
-                ui->DoingList->addItem(zuotijia->tmpa->text());
+                ui->DoingList->addItem(zuotijia->tmpa);
             }
         }
     }
@@ -59,7 +59,7 @@ void XiaoZhenZuotijia::onbtnStop_clicked()
             if(ui->DoingList->item(i)->text()==zuotijia->tmpr->text())
             {
                 ui->DoingList->takeItem(i);
-                ui->CandoList->addItem(zuotijia->tmpr->text());
+                ui->CandoList->addItem(zuotijia->tmpr);
             }
         }
     }
@@ -135,6 +135,11 @@ void XiaoZhenZuotijia::iniData()
     ui->statusbar->addWidget(prbDay);
 
     ui->CandoList->addItems(zuotijia->getCandoItems());//初始化CandoList
+
+    for(int i = 0;i < ui->CandoList->count();i++)
+    {
+        ui->CandoList->item(i)->setToolTip(zuotijia->getCandoList().at(i).description);
+    }
 
 }
 

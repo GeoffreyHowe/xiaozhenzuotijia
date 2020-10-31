@@ -64,7 +64,9 @@ Qzuotijia::~Qzuotijia()
 //改变日期的函数，顺便发射日期改变的信号，通知相应组件刷新
 void Qzuotijia::changeDay(int d)
 {
-    if(d!=0)
+    if(Day+d>40)
+        d=40-Day;
+    if(d!=0&&Day<40)
     {
         Day+=d;
         emit onDaychanged();
@@ -123,6 +125,11 @@ QList<QString> Qzuotijia::getDoingItems()
     return  DoingItems;
 }
 
+QList<Qincident> Qzuotijia::getCandoList()
+{
+    return CandoList;
+}
+
 int Qzuotijia:: getDay()
 {
     return Day;
@@ -130,10 +137,13 @@ int Qzuotijia:: getDay()
 //下一天事件，当下一天按钮点下，触发该事件
 void Qzuotijia::nextDay()
 {
-    Qincident Doing;
-    foreach(Doing,DoingList)
+    if(Day<40)
     {
-        Do(Doing);
+        Qincident Doing;
+        foreach(Doing,DoingList)
+        {
+            Do(Doing);
+        }
     }
 }
 

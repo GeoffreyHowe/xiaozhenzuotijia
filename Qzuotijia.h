@@ -39,6 +39,7 @@ public:
     QString getHealth();
     QList<QString> getCandoItems();
     QList<QString> getDoingItems();
+    QList<Qincident> getCandoList();
     int getDay();
 
     void nextDay();
