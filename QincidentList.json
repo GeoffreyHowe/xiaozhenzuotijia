@@ -1,23 +1,106 @@
 [
     {
-        "name":"上课（2h）",
+        "name":"祖国的花朵正在上课2h",
         "cScore":0,
         "cHealth":0,
         "cTime":2,
-        "discription":"上课2小时，保证当天所有的属性不降低"
+        "ExtraScore":0,
+        "discription":"上课两小时，确保当天所有的属性不降低"
     },
     {
-        "name":"上课（4h）",
-        "cScore":1,
+        "name":"祖国的花朵正在上课4h",
+        "cScore":5,
         "cHealth":0,
         "cTime":4,
-        "discription":"上课4小时，成绩缓慢增加"
+        "ExtraScore":0,
+        "discription":"上课四小时，表现不错，当天成绩+5"
     },
     {
-        "name":"上课（8h）",
-        "cScore":2,
+        "name":"祖国的花朵正在上课8h",
+        "cScore":10,
         "cHealth":0,
         "cTime":8,
-        "discription":"上课8小时"
+        "ExtraScore":0,
+        "discription":"上课八小时，表现优异，当天成绩+10"
+    },
+    { 
+        "name":"第七套全国中小学生广播体操（运动）2h",
+        "cScore":10,
+        "cHealth":30,
+        "cTime":2,
+        "ExtraScore":0,
+        "discription":"身体是革命的本钱，积极运动强身健体，成绩+10，健康+30"
+    },
+    {
+        "name":"大吉大利，今晚吃鸡(游戏)2h",
+        "cScore":-10,
+        "cHealth":-15,
+        "cTime":2,
+        "ExtraScore":0,
+        "discription":"沉迷游戏，昏睡不醒，成绩-10，健康-15"
+    },
+    {
+        "name":"爱的空格太多,能填写的情字却太少（谈恋爱）2h",
+        "cScore":-10,
+        "cHealth":10,
+        "cTime":2,
+        "ExtraScore":0,
+        "discription":"LOVE提高情商，健康+10，但是被爱情冲昏了头脑，成绩-10"
+    },
+    {
+        "name":"早安，打工人（兼职）1h",
+        "cScore":0,
+        "cHealth":0,
+        "cTime":1,
+        "ExtraScore":0,
+        "discription":"维持正常生活的基本开销，只占用时间"
+    },
+    {
+        "name":"晚安，尾款人（兼职）1h",
+        "cScore":0,
+        "cHealth":0,
+        "cTime":1,
+        "ExtraScore":0,
+        "discription":"维持正常生活的基本开销，只占用时间"
+    },
+    {
+        "name":"又红又专的社会主义接班人培训2h",
+        "cScore":10,
+        "cHealth":10,
+        "cTime":2,
+        "ExtraScore":0,
+        "discription":"净化思想，人间和平，peace&love，成绩+10，健康+10"
+    },
+    {
+        "name":"洗剪吹，杀马特造型（娱乐）1h",
+        "cScore":-10,
+        "cHealth":-20,
+        "cTime":1,
+        "ExtraScore":0,
+        "discription":"烫头有损身心健康，引领杀马特潮流，成绩-10，健康-20"
+    },
+    {
+        "name":"在菜市场卖菜（兼职）1h",
+        "cScore":0,
+        "cHealth":0,
+        "cTime":1,
+        "ExtraScore":0,
+        "discription":"维持正常生活的基本开销，只占用时间"
+    },
+    {
+        "name":"和同学吵架1h",
+        "cScore":0,
+        "cHealth":-20,
+        "cTime":1,
+        "ExtraScore":0,
+        "discription":"吵架促使颅内高压，心脏负荷增加，健康-20"
+    },
+    {
+        "name":"测试事件",
+        "cScore":0,
+        "cHealth":0,
+        "cTime":0,
+        "cExtraScore":1,
+        "discription":"仅供测试"
     }
 ]

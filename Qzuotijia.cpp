@@ -12,6 +12,7 @@ Qzuotijia::Qzuotijia()
     Time = 24;
     Health = 90;
     Score = 400;
+    ExtraScore = 0;
     tmpa = NULL;
     tmpr = NULL;
 
@@ -44,6 +45,7 @@ Qzuotijia::Qzuotijia()
                                         ob.value("cTime").toInt(),
                                         ob.value("cScore").toInt(),
                                         ob.value("cHealth").toInt(),
+                                        ob.value("cExtraScore").toInt(),
                                         ob.value("discription").toString()
                                         );
                             Cando = new QListWidgetItem(ob.value("name").toString());
@@ -100,6 +102,15 @@ void Qzuotijia::changeTime(int t)
     }
 }
 
+void Qzuotijia::changeExtraScore(int e)
+{
+    if(e!=0)
+    {
+        ExtraScore+=e;
+        emit onExtraScorechanged();
+    }
+}
+
 
 
 QString Qzuotijia:: getScore()
@@ -113,6 +124,11 @@ QString Qzuotijia:: getTime()
 QString Qzuotijia:: getHealth()
 {
     return QString::number(Health);
+}
+
+QString Qzuotijia::getExtraScore()
+{
+    return QString::number(ExtraScore);
 }
 
 QList<QString> Qzuotijia::getCandoItems()
@@ -158,8 +174,8 @@ void Qzuotijia::settmpItemr(QListWidgetItem *tmpr)
     this->tmpr = tmpr;
     qDebug()<<this->tmpr->text()<<endl;
 }
-//给做题家的清单里面添加事件
-void Qzuotijia::add()
+//给做题家的清单里面添加事件,返回值是剩余时间是否还能往清单内添加事件了
+bool Qzuotijia::add()
 {
     if(tmpa!=NULL)
     {
@@ -169,18 +185,16 @@ void Qzuotijia::add()
         Qincident Doing;
         foreach(Doing,CandoList)
         {
-            if(Doing.name==tmpa->text())
+            if(Doing.name==tmpa->text()&&Time-Doing.cTime>=0)
             {
                 DoingList.append(Doing);
                 CandoList.removeOne(Doing);
                 changeTime(Doing.cTime);
+                return true;
             }
         }
-//        foreach(Doing,DoingList)
-//        {
-//            qDebug()<<Doing.name<<endl;
-//        }
     }
+    return false;
 }
 //给做题家的清单里面移除事件
 void Qzuotijia::remove()
@@ -208,7 +222,9 @@ void Qzuotijia::Do(Qincident Doing)
 {
     changeScore(Doing.cScore);
     changeHealth(Doing.cHealth);
+    changeExtraScore(Doing.cExtraScore);
     qDebug()<<"进行事件："<<Doing.name;
     qDebug()<<"cTime"<<":"<<Doing.cTime;
     qDebug()<<"cScore"<<":"<<Doing.cScore;
+    qDebug()<<"cScoreExtraScore"<<":"<<Doing.cExtraScore;
 }

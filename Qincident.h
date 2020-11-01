@@ -8,13 +8,14 @@ public:
     int cHealth;
     int cScore;
     int cTime;
+    int cExtraScore;
     QString description;
 
     void setDescripition(QString);
 
     bool operator==(const Qincident);
 
-    Qincident(QString name,int cTime,int cScore,int cHealth,QString des);
+    Qincident(QString name,int cTime,int cScore,int cHealth,int cExtraScore,QString des);
     Qincident();
     ~Qincident();
 };

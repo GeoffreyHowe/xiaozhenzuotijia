@@ -26,6 +26,7 @@ private slots:
     void refreshTime();//刷新时间
     void refreshScore();//刷新成绩
     void refreshHealth();//刷新身心健康
+    void refreshExtraScore();//刷新竞赛加分
 
 private:
     Ui::XiaoZhenZuotijia *ui;
