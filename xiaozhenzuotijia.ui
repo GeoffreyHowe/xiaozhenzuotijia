@@ -226,8 +226,8 @@
    <widget class="QPushButton" name="btnNextDay">
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>570</y>
+      <x>890</x>
+      <y>490</y>
       <width>81</width>
       <height>71</height>
      </rect>
@@ -242,7 +242,7 @@
       <x>40</x>
       <y>480</y>
       <width>751</width>
-      <height>201</height>
+      <height>212</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,0,1">
@@ -424,17 +424,28 @@ color:rgb(0, 255, 29);
         </layout>
        </item>
        <item>
-        <spacer name="horizontalSpacer_5">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
+        <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="2,1">
+         <item>
+          <spacer name="verticalSpacer_10">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>老师来了</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
        <item>
         <spacer name="horizontalSpacer_6">
@@ -454,6 +465,7 @@ color:rgb(0, 255, 29);
     </layout>
    </widget>
   </widget>
+  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -465,12 +477,29 @@ color:rgb(0, 255, 29);
    </property>
    <widget class="QMenu" name="menu">
     <property name="title">
-     <string>游戏怎么玩？</string>
+     <string>帮助</string>
     </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
    </widget>
    <addaction name="menu"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionHelp">
+   <property name="text">
+    <string>游戏怎么玩？</string>
+   </property>
+   <property name="toolTip">
+    <string>咋玩捏？</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="toolTip">
+    <string>关于本项目和我们</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

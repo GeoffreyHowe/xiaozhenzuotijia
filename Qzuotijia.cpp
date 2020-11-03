@@ -17,7 +17,7 @@ Qzuotijia::Qzuotijia()
     tmpr = NULL;
 
     //初始化玩家的事件列表（通过外部的json文件实现事件的更新和属性设置）
-    QFile file(":/incidenList/QincidentList.json");
+    QFile file(":/json/QincidentList.json");
         if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
         {
             qDebug()<<"Warnning"<<"can't open"<<endl;
@@ -223,8 +223,8 @@ void Qzuotijia::Do(Qincident Doing)
     changeScore(Doing.cScore);
     changeHealth(Doing.cHealth);
     changeExtraScore(Doing.cExtraScore);
-    qDebug()<<"进行事件："<<Doing.name;
-    qDebug()<<"cTime"<<":"<<Doing.cTime;
-    qDebug()<<"cScore"<<":"<<Doing.cScore;
-    qDebug()<<"cScoreExtraScore"<<":"<<Doing.cExtraScore;
+//    qDebug()<<"进行事件："<<Doing.name;
+//    qDebug()<<"cTime"<<":"<<Doing.cTime;
+//    qDebug()<<"cScore"<<":"<<Doing.cScore;
+//    qDebug()<<"cScoreExtraScore"<<":"<<Doing.cExtraScore;
 }

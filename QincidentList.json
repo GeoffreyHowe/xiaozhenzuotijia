@@ -100,7 +100,7 @@
         "cScore":0,
         "cHealth":0,
         "cTime":0,
-        "cExtraScore":1,
+        "cExtraScore":1 ,
         "discription":"仅供测试"
     }
 ]

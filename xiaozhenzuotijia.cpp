@@ -3,6 +3,14 @@
 #include <QFontDatabase>
 #include <QtWidgets/QMessageBox>
 #include <QDebug>
+
+#include "shudialog.h"
+#include "aboutdialog.h"
+#include "gameoverdialog.h"
+#include "helpdialog.h"
+#include "randomeventdialog.h"
+
+
 XiaoZhenZuotijia::XiaoZhenZuotijia(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::XiaoZhenZuotijia)
@@ -36,6 +44,11 @@ void XiaoZhenZuotijia::onbtnNextDay_clicked()
         zuotijia->changeHealth(-10);
     }
     zuotijia->nextDay();
+    if(zuotijia->getDay()%7==0){
+        RandomEventDialog * ran;
+        ran = new RandomEventDialog(zuotijia);
+        ran->exec();
+    }
 }
 //右箭头按钮点击事件
 void XiaoZhenZuotijia::onbtnBegin_clicked()
@@ -51,7 +64,8 @@ void XiaoZhenZuotijia::onbtnBegin_clicked()
                     ui->CandoList->takeItem(i);
                     ui->DoingList->addItem(zuotijia->tmpa);
 //                    qDebug()<<"转移"<<zuotijia->getTime();
-                    if(zuotijia->getTime().toInt()<7){
+                    if(zuotijia->getTime().toInt()<7)
+                    {
                         ui->labTime->setStyleSheet("color:red;background-color:orange");
 //                        qDebug()<<"颜色";
                     }
@@ -78,6 +92,11 @@ void XiaoZhenZuotijia::onbtnStop_clicked()
             {
                 ui->DoingList->takeItem(i);
                 ui->CandoList->addItem(zuotijia->tmpr);
+                if(zuotijia->getTime().toInt()>6)
+                {
+                    ui->labTime->setStyleSheet("background:rgb(127, 127, 127);color:rgb(0, 255, 29)");
+//                        qDebug()<<"颜色";
+                }
             }
         }
     }
@@ -163,7 +182,31 @@ void XiaoZhenZuotijia::iniData()
     for(int i = 0;i < ui->CandoList->count();i++)
     {
         ui->CandoList->item(i)->setToolTip(zuotijia->getCandoList().at(i).description);
+//        ui->CandoList->item(i)->setSizeHint();
     }
 
 }
 
+//老师来了按钮
+void XiaoZhenZuotijia::on_pushButton_clicked()
+{
+    SHUDialog *shu = new SHUDialog;
+    shu->exec();
+    delete shu;
+}
+
+//关于
+void XiaoZhenZuotijia::on_actionAbout_triggered()
+{
+    AboutDialog *about = new AboutDialog;
+    about->exec();
+    delete about;
+}
+
+//帮助
+void XiaoZhenZuotijia::on_actionHelp_triggered()
+{
+    HelpDialog *help = new HelpDialog;
+    help->exec();
+    delete help;
+}

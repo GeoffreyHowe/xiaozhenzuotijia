@@ -1,0 +1,56 @@
+[
+    {
+        "name":"【挨打】",
+        "cScore":-70,
+        "cHealth":-50,
+        "cTime":0,
+        "cExtraScore":1 ,
+        "discription":"学习太好被学校小混混嫉妒，放学叫人揍了你一顿。\n受伤住院，天数+7，健康-50，成绩-70！\n1",
+        "cDay":7
+    },
+    {
+        "name":"仅供测试",
+        "cScore":0,
+        "cHealth":0,
+        "cTime":0,
+        "cExtraScore":1 ,
+        "discription":"学习太好被学校小混混嫉妒，放学叫人揍了你一顿。\n受伤住院，天数+7，健康-50，成绩-70！\n1",
+        "cDay":2
+    },
+    {
+        "name":"仅供测试",
+        "cScore":0,
+        "cHealth":0,
+        "cTime":0,
+        "cExtraScore":1 ,
+        "discription":"学习太好被学校小混混嫉妒，放学叫人揍了你一顿。\n受伤住院，天数+7，健康-50，成绩-70！\n3",
+        "cDay":2
+    },
+    {
+        "name":"仅供测试",
+        "cScore":0,
+        "cHealth":0,
+        "cTime":0,
+        "cExtraScore":1 ,
+        "discription":"学习太好被学校小混混嫉妒，放学叫人揍了你一顿。\n受伤住院，天数+7，健康-50，成绩-70！\n4",
+        "cDay":2
+    },
+    {
+        "name":"仅供测试",
+        "cScore":0,
+        "cHealth":0,
+        "cTime":0,
+        "cExtraScore":1 ,
+        "discription":"学习太好被学校小混混嫉妒，放学叫人揍了你一顿。\n受伤住院，天数+7，健康-50，成绩-70！\n5",
+        "cDay":2
+    },
+    {
+        "name":"仅供测试",
+        "cScore":0,
+        "cHealth":0,
+        "cTime":0,
+        "cExtraScore":1 ,
+        "discription":"学习太好被学校小混混嫉妒，放学叫人揍了你一顿。\n受伤住院，天数+7，健康-50，成绩-70！\n6",
+        "cDay":2
+    }
+]

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SHUDialog</class>
+ <widget class="QDialog" name="SHUDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>804</width>
+    <height>679</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>上海大学的简介</string>
+  </property>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>731</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="plainText">
+    <string>上海大学（Shanghai University），简称“上大”，是上海市属、国家“211工程”重点建设的综合性大学，教育部与上海市人民政府共建高校，世界一流学科建设高校，入选国家“111计划”、卓越工程师教育培养计划、卓越新闻传播人才教育培养计划、国家建设高水平大学公派研究生项目、教育部来华留学示范基地、上海市首批高水平地方高校建设试点、上海市首批深化创新创业教育改革示范高校。
+1922年10月，国共合作曾创建了上海大学，1927年被国民党当局强行关闭。1983年，上海市人民政府在复旦大学分校、上海外国语学院分院、华东师范大学仪表电子分校、上海科学技术大学分校、上海机械学院轻工分院、上海市美术学校的基础上成立上海大学。1994年5月，新的上海大学由上海工业大学（成立于1960年）、上海科学技术大学（成立于1958年）、原上海大学（成立于1983年）和上海科技高等专科学校（成立于1959年）合并组建而成。 [1-4] 
+截至2020年5月31日，上海大学有宝山校区（校本部）、延长校区、嘉定校区3个校区，校园占地面积近200万平方米，校舍建筑面积140万平方米；设有30个学院、1个学部（筹）和1个校管系；开办91个本科专业；有19个博士后科研流动站，24个一级学科博士点，2个二级学科博士点，43个一级学科硕士点，1个二级学科硕士点，22种硕士专业学位类别；有专任教师3173人；有研究生16581人，全日制本科生19989人，预科生55人，成人教育学生17305人；在校就读的外国留学生4532人，其中学历生1872人。</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>590</y>
+     <width>731</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <spacer name="verticalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="font">
+       <font>
+        <family>楷体</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="font">
+       <font>
+        <family>楷体</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="font">
+       <font>
+        <family>楷体</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>离开</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SHUDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>401</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>SHUDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>385</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>401</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>SHUDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>401</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

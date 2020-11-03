@@ -1,10 +1,11 @@
-# include <QObject>
-# include "Qincident.h"
+#pragma once
+#include <QObject>
 #include <QtWidgets/QListWidgetItem>
+#include "Qincident.h"
 
 class Qzuotijia :public QObject
 {
-    Q_OBJECT;
+    Q_OBJECT
 
 private:
     int Day;   //属性，游戏进行天数

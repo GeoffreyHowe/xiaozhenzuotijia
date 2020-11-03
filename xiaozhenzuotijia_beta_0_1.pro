@@ -16,17 +16,34 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Qevent.cpp \
     Qincident.cpp \
     Qzuotijia.cpp \
+    aboutdialog.cpp \
+    gameoverdialog.cpp \
+    helpdialog.cpp \
     main.cpp \
+    randomeventdialog.cpp \
+    shudialog.cpp \
     xiaozhenzuotijia.cpp
 
 HEADERS += \
+    Qevent.h \
     Qincident.h \
     Qzuotijia.h \
+    aboutdialog.h \
+    gameoverdialog.h \
+    helpdialog.h \
+    randomeventdialog.h \
+    shudialog.h \
     xiaozhenzuotijia.h
 
 FORMS += \
+    aboutdialog.ui \
+    gameoverdialog.ui \
+    helpdialog.ui \
+    randomeventdialog.ui \
+    shudialog.ui \
     xiaozhenzuotijia.ui
 
 TRANSLATIONS += \

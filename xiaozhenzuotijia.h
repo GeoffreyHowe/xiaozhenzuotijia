@@ -28,6 +28,12 @@ private slots:
     void refreshHealth();//刷新身心健康
     void refreshExtraScore();//刷新竞赛加分
 
+    void on_pushButton_clicked();
+
+    void on_actionAbout_triggered();
+
+    void on_actionHelp_triggered();
+
 private:
     Ui::XiaoZhenZuotijia *ui;
     Qzuotijia *zuotijia;//玩家对象指针，在构造函数内new出来

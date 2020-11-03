@@ -9,6 +9,9 @@ bool Qincident::operator==(const Qincident Q)
 {
     if((name==Q.name)&&(cHealth==Q.cHealth)&&(cScore==Q.cScore)&&(cTime==Q.cTime)&&(description==Q.description)&&(cExtraScore==Q.cExtraScore))
         return true;
+    else
+        return false;
+
 }
 
 Qincident::Qincident(QString name,int cTime,int cScore,int cHealth,int cExtraScore,QString des):
