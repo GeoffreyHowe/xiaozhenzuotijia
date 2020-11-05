@@ -12,7 +12,7 @@ void RandomEventDialog::occur()
     qsrand(QTime(0, 0, 0).secsTo(QTime::currentTime()));
     int i = qrand()%QRandomEventList.count();
     QRandomEventList.value(i).influence(*zuotijia);
-    this->setWindowTitle("【突发事件！！！】"+QRandomEventList.value(i).name);
+    this->setWindowTitle("【突发事件！！！】————"+QRandomEventList.value(i).name);
 
     ui->textBrowser->setText(QRandomEventList.value(i).description);
 }

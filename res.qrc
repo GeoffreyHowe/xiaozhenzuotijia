@@ -6,4 +6,9 @@
         <file>QincidentList.json</file>
         <file>QrandomEventList.json</file>
     </qresource>
+    <qresource prefix="/icon">
+        <file>brightness.ico</file>
+        <file>magnifyingglass.ico</file>
+        <file>profle.ico</file>
+    </qresource>
 </RCC>

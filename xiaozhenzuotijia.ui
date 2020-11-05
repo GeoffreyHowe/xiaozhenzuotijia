@@ -19,6 +19,10 @@
   <property name="windowTitle">
    <string>小镇做题家_预览版（乞丐版）</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icon/profle.ico</normaloff>:/icon/profle.ico</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
@@ -485,6 +489,10 @@ color:rgb(0, 255, 29);
    <addaction name="menu"/>
   </widget>
   <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/brightness.ico</normaloff>:/icon/brightness.ico</iconset>
+   </property>
    <property name="text">
     <string>游戏怎么玩？</string>
    </property>
@@ -493,6 +501,10 @@ color:rgb(0, 255, 29);
    </property>
   </action>
   <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/magnifyingglass.ico</normaloff>:/icon/magnifyingglass.ico</iconset>
+   </property>
    <property name="text">
     <string>关于</string>
    </property>
@@ -501,6 +513,8 @@ color:rgb(0, 255, 29);
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

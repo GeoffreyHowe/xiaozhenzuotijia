@@ -96,11 +96,19 @@
         "discription":"吵架促使颅内高压，心脏负荷增加，健康-20"
     },
     {
-        "name":"测试事件",
+        "name":"测试事件1",
         "cScore":0,
         "cHealth":0,
         "cTime":0,
         "cExtraScore":1 ,
+        "discription":"仅供测试"
+    },
+    {
+        "name":"测试事件2",
+        "cScore":0,
+        "cHealth":0,
+        "cTime":20,
+        "cExtraScore":0 ,
         "discription":"仅供测试"
     }
 ]

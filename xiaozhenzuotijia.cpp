@@ -44,10 +44,10 @@ void XiaoZhenZuotijia::onbtnNextDay_clicked()
         zuotijia->changeHealth(-10);
     }
     zuotijia->nextDay();
-    if(zuotijia->getDay()%7==0){
-        RandomEventDialog * ran;
-        ran = new RandomEventDialog(zuotijia);
-        ran->exec();
+    if(zuotijia->getDay()%4==0){
+        RandomEventDialog * rand;
+        rand = new RandomEventDialog(zuotijia);
+        rand->exec();
     }
 }
 //右箭头按钮点击事件
