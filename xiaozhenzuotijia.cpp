@@ -49,6 +49,12 @@ void XiaoZhenZuotijia::onbtnNextDay_clicked()
         rand = new RandomEventDialog(zuotijia);
         rand->exec();
     }
+    if(zuotijia->getDay()==40){
+        GameOverDialog* over;
+        over = new GameOverDialog(zuotijia);
+        over->exec();
+        this->close();
+    }
 }
 //右箭头按钮点击事件
 void XiaoZhenZuotijia::onbtnBegin_clicked()
