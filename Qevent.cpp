@@ -2,10 +2,12 @@
 
 void Qevent::influence(Qzuotijia &zuotijia)
 {
+    //根据事件相应属性去影响做题家
     zuotijia.changeDay(this->cDay);
     zuotijia.changeTime(this->cTime);
     zuotijia.changeScore(this->cScore);
     zuotijia.changeHealth(this->cHealth);
+    zuotijia.changeExtraScore(this->cExtraScore);
 }
 
 Qevent::Qevent()

@@ -2,7 +2,7 @@
 #define SHUDIALOG_H
 
 #include <QDialog>
-
+//老师来了弹出该对话框，显示上海大学简介
 namespace Ui {
 class SHUDialog;
 }

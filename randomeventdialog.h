@@ -5,6 +5,7 @@
 #include <QList>
 
 #include "Qevent.h"
+//随机事件对话框
 
 namespace Ui {
 class RandomEventDialog;

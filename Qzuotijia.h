@@ -24,8 +24,8 @@ private:
 
 
 public:
-    QListWidgetItem* tmpa;
-    QListWidgetItem* tmpr;
+    QListWidgetItem* tmpa;//指向待添加事件item的指针，方便正式添加时使用
+    QListWidgetItem* tmpr;//指向待移除事件item的指针，方便正式添加时使用
 
 
     Qzuotijia();
@@ -46,7 +46,7 @@ public:
     QList<Qincident> getCandoList();
     int getDay();
 
-    void nextDay();
+    void nextDay();//下一天按钮按下，做题家清点自己的事件列表，完整这一天要干的事情
 
     bool add();//做题家往自己的清单里面添加事件
     void remove();//做题家从自己的清单里面减少事件
@@ -63,7 +63,7 @@ signals:
     void onHealthchanged();//当身心健康改变，发射的信号，
     void onScorechanged();//当成绩改变，发射的信号，
     void onTimechanged();//当今天剩余时间改变，发射的信号，
-    void onExtraScorechanged();
+    void onExtraScorechanged();//当竞赛加分改变，发射的信号，
 
 
 };

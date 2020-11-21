@@ -105,10 +105,10 @@
     },
     {
         "name":"测试事件2",
-        "cScore":0,
-        "cHealth":0,
+        "cScore":99,
+        "cHealth":99,
         "cTime":20,
-        "cExtraScore":0 ,
+        "cExtraScore":99 ,
         "discription":"仅供测试"
     }
 ]
